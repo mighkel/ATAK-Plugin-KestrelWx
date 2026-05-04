@@ -1,6 +1,6 @@
 # Changelog
 
-## I'll the beloow intact, but this release is a bust, as it will not work in ATAK yet.  Sorry if hopes were up.  I'll get back on this when I get time.
+## I'll leave the below intact, but this release is a bust, as it will not work in ATAK yet.  Sorry if hopes were up.  I'll get back on this when I get time.
 
 ## v0.1.0 — 2026-04-08
 
