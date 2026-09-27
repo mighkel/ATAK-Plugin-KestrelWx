@@ -37,6 +37,11 @@ Screenshots will be added in the next version.
    load it.
 4. The Kestrel Weather button appears on ATAK's toolbar.
 
+ATAK's plugin list may say the plugin is **not officially signed**. That is
+normal for plugins built through the TAK Product Center's third-party signing
+process: they are signed by the TAK Product Center, with the certificate it uses
+for plugins it did not write. ATAK has checked the signature before loading it.
+
 **Updating:** install the new APK over the old one, then fully close ATAK
 (swipe it away in Android's recent apps) and reopen it before loading the
 plugin. ATAK can keep running the old copy until it is restarted.
