@@ -130,6 +130,6 @@ notification when a trigger fires. A temporary alert icon is also shown on the s
 
 ## Getting help
 
-Open an issue at https://github.com/mighkel/ATAK-Plugin-KestrelWx/issues.
+Open an issue at [github.com/mighkel/ATAK-Plugin-KestrelWx/issues](https://github.com/mighkel/ATAK-Plugin-KestrelWx/issues).
 Include your ATAK version, Android version, phone model and the plugin version.
 The plugin version is shown in ATAK's Plugins manager.
