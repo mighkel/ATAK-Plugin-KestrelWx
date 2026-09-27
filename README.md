@@ -37,8 +37,9 @@ STATUS
 Version 0.2: the first release that loads on official ATAK. Version 0.1 was
 signed but never loaded; see CHANGELOG.md.
 
-Tested with a Kestrel 5500FWL on ATAK-CIV 5.6: meter connection, live readings,
-the station marker, and sharing between two phones.
+Verified on official ATAK with a Kestrel 5500FWL: the 5.6 build on Play Store
+ATAK 5.6.0.12 (Galaxy S8+) connects to the meter and shares readings, and the
+5.8 build on ATAK 5.8.0.4 (Galaxy S24+) receives them.
 
 Data Sync feed publishing is not implemented yet and shows as "future release"
 in the plugin.

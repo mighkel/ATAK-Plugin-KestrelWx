@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2 — unreleased (submitted to tak.gov 2026-09-27)
+## 0.2 — 2026-09-27
 
 The first version that loads on official ATAK.
 
@@ -18,8 +18,9 @@ The first version that loads on official ATAK.
 - **Fixed:** sharing to the TAK Server failed with "Unable to create the …
   directory" when a feed ID was set.
 
-Tested with a Kestrel 5500FWL on ATAK-CIV 5.6: meter connection, live
-readings, the station marker, and sharing between two phones.
+Verified with the tak.gov-signed builds on official ATAK: the 5.6 build on
+Play Store ATAK 5.6.0.12 (Galaxy S8+) connects to a Kestrel 5500FWL and shares
+readings; the 5.8 build on ATAK 5.8.0.4 (Galaxy S24+) receives them.
 
 ## 0.1 — 2026-04-08 (does not work)
 
