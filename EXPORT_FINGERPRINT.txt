@@ -1,7 +1,0 @@
-exported_utc=2026-04-08T19:05:42.7347203Z
-source_repo=C:\Users\PNADMIN\Documents\GitHub\ATAK-Kestrel
-git_commit=3596e67fd0be8d2273f38f8fcc8568952b05c3f4
-release_tag=v0.1.0
-include_apk=True
-apk_source=C:\PROJECTS\NKTAK-WORKSPACE\DOWNLOADS-OTHER\info-clearcreekvfd-com-20260407-183853\ATAK-Plugin-ATAKKestrel-0.1--5.6.0-civ-release.apk
-apk_staged=C:\Users\PNADMIN\Documents\GitHub\ATAK-Plugin-KestrelWx\releases\ATAK-Plugin-KestrelWx-v0.1.0.apk

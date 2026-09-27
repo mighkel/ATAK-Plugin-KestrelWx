@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: User Guide
+    url: https://github.com/mighkel/ATAK-Plugin-KestrelWx/blob/main/docs/USER_GUIDE.md
+    about: How to install, connect the meter and share readings.
   - name: Tester Guide
     url: https://github.com/mighkel/ATAK-Plugin-KestrelWx/blob/main/TESTER_GUIDE.md
-    about: Review the tester guide before filing an issue.
+    about: What to include in a report.

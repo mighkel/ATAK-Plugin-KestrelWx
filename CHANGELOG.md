@@ -1,35 +1,27 @@
 # Changelog
 
-## I'll leave the below intact, but this release is a bust, as it will not work in ATAK yet.  Sorry if hopes were up.  I'll get back on this when I get time.
+## 0.2 — unreleased (submitted to tak.gov 2026-09-27)
 
-## v0.1.0 — 2026-04-08
+The first version that loads on official ATAK.
 
-First signed release. Pre-alpha. Suitable for initial self-testing and trusted-collaborator review.
-Not yet ready for broad distribution.
+- **Fixed:** 0.1 failed to load on official ATAK-CIV with
+  `ClassNotFoundException: gov.tak.api.plugin.IServiceController`. The release
+  build did not apply ATAK's class-name mapping; it does now.
+- **New:** builds for ATAK-CIV 5.6, 5.7 and 5.8. Install the one matching your
+  ATAK.
+- **New:** each build carries its own rising version code, so an MDM or the
+  TAKwerx Market can push it as an update.
+- **Changed:** sharing defaults to **Auto-send on Connect**. The Data Sync
+  option is shown greyed out as a future release: in 0.1 it only uploaded a
+  one-time data package to the TAK Server and never published to a Data Sync
+  feed. Anyone with Data Sync selected is moved to Auto-send.
+- **Fixed:** sharing to the TAK Server failed with "Unable to create the …
+  directory" when a feed ID was set.
 
-### Features
+Tested with a Kestrel 5500FWL on ATAK-CIV 5.6: meter connection, live
+readings, the station marker, and sharing between two phones.
 
-- BLE scan and connect to a single Kestrel weather device.
-- Live weather panel inside ATAK showing temperature, relative humidity, wind speed, wind direction, and derived fire-weather values.
-- Wind barb map icon rendered at the sensor location with a concise T/RH label.
-- Auto-detection of Server+Client mode (Kestrel connected) and Client-only mode (no Kestrel).
-- CoT generation and transmission of sensor telemetry over TAK Server.
-- Data Sync mission publish/subscribe workflow for sharing weather with other EUDs.
-- Receive and display remote Kestrel station data on client EUDs.
-- Trend charts for temperature, relative humidity, and wind over the operational period.
-- Configurable trigger points with optional notifications and temporary alert icon overlay.
-- Optional suppression of the server EUD marker on client EUDs.
-- Battery indicator for the connected Kestrel device.
-- Radial menu integration for quick access to the full weather detail view from any station marker.
+## 0.1 — 2026-04-08 (does not work)
 
-### Known Limitations
-
-- Single Kestrel device only. Multi-sensor support is a non-goal for this release.
-- Field validation of Data Sync mission setup and group/channel UX is ongoing.
-- See `KNOWN_ISSUES.md` for device-specific and network-condition notes.
-
-### Requirements
-
-- ATAK CIV 5.6.0 or compatible.
-- Android device with Bluetooth LE.
-- TAK Server reachable from all EUDs for network sharing features.
+Signed by tak.gov, but it does not load on official ATAK (fixed in 0.2).
+It was never published as a GitHub Release. Do not install it.

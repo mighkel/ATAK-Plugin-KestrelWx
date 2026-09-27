@@ -6,10 +6,10 @@ labels: bug
 
 ## Environment
 
-- ATAK version:
+- ATAK version (Settings > About):
 - Android version:
 - Device model:
-- Plugin version:
+- Plugin version (Plugins manager):
 
 ## What happened
 

@@ -27,6 +27,14 @@ Please include:
 - whether it happens every time or intermittently
 - screenshots or short screen recordings if available
 
+## Which build to install
+
+Install the APK that matches your ATAK version (5.6, 5.7 or 5.8), from the
+Releases page. Builds here are signed by the TAK Product Center and only load
+on official ATAK (tak.gov or the Play Store), not on a developer build.
+
+After updating the plugin, fully close ATAK and reopen it before testing.
+
 ## If Install Fails
 
 Please note:
