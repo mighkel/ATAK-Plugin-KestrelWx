@@ -2,12 +2,13 @@
 
 ## Open
 
-- **No wind barb on phones that receive a station.** The phone connected to
-  the meter shows the barb, but receiving phones show the station with ATAK's
-  default marker icon, drawn at the sending phone's position and hidden under
-  that phone's own marker. Readings still arrive: find the station in Overlay
-  Manager (it is listed under the station's callsign) to see its values.
-  - Affects: 0.2
+- **No wind barb on receiving phones running ATAK 5.8.** The phone connected
+  to the meter shows the barb, and receiving phones on ATAK 5.6 show it too,
+  but receiving phones on ATAK 5.8 show the station with ATAK's default marker
+  icon, which can be hidden under the sending phone's own marker. Readings
+  still arrive: find the station in Overlay Manager (listed under the station's
+  callsign) to see its values.
+  - Affects: 0.2 on ATAK 5.8
   - Workaround: on receiving phones, tick **Enabled** beside **Hide Server EUD
     (Client)** so the sending phone's marker does not cover the station.
   - Planned fix: next version.
@@ -22,6 +23,12 @@
   - Workaround: fully close ATAK and reopen it, then load the plugin.
 - **No screenshots in the user guide yet.**
   - Planned for the next version, with a user manual inside ATAK.
+
+- **With no wind direction, the barb points north.** When the meter reports
+  no direction (shown as `--`), the barb is drawn pointing up, which looks like
+  a north wind. Check the direction in the weather pane.
+  - Affects: 0.2
+  - Planned fix: next version.
 
 ## Fixed
 
