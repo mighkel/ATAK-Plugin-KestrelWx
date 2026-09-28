@@ -2,15 +2,15 @@
 
 ## Open
 
-- **No wind barb on receiving phones running ATAK 5.8.** The phone connected
-  to the meter shows the barb, and receiving phones on ATAK 5.6 show it too,
-  but receiving phones on ATAK 5.8 show the station with ATAK's default marker
-  icon, which can be hidden under the sending phone's own marker. Readings
-  still arrive: find the station in Overlay Manager (listed under the station's
-  callsign) to see its values.
-  - Affects: 0.2 on ATAK 5.8
-  - Workaround: on receiving phones, tick **Enabled** beside **Hide Server EUD
-    (Client)** so the sending phone's marker does not cover the station.
+- **The wind barb can disappear on phones that receive a station.** The
+  station then shows with ATAK's default marker icon, may stop moving, and can
+  be hidden under the sending phone's own marker. Readings still arrive (the
+  station's values in its detail view keep updating).
+  - Affects: 0.2, any ATAK version
+  - Workaround: fully close ATAK (swipe it away in Android's recent apps) and
+    reopen it. The barb comes back. Old copies of the station fade out once
+    they go stale. Ticking **Enabled** beside **Hide Server EUD (Client)** keeps
+    the sending phone's marker from covering the station.
   - Planned fix: next version.
 - **Data Sync feed publishing is not implemented.** The option shows as
   "Data Sync Feed (future release)" and cannot be selected. Readings are shared
