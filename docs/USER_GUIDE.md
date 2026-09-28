@@ -1,10 +1,10 @@
 # Kestrel Wx — User Guide
 
-**Download Kestrel Wx 0.2** (pick the one matching your ATAK-CIV version, sideload, then load it in ATAK's Plugins manager):
+**Download Kestrel Wx 0.3** (pick the one matching your ATAK-CIV version, sideload, then load it in ATAK's Plugins manager):
 
-- **ATAK-CIV 5.6:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.6.0-civ-release.apk
-- **ATAK-CIV 5.7:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.7.0-civ-release.apk
-- **ATAK-CIV 5.8:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.8.0-civ-release.apk
+- **ATAK-CIV 5.6:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.6.0-civ-release.apk
+- **ATAK-CIV 5.7:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.7.0-civ-release.apk
+- **ATAK-CIV 5.8:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.8.0-civ-release.apk
 
 All releases: https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases
 
@@ -58,8 +58,19 @@ and connects to the meter itself.
 4. The pane shows **SERVER** and readings start arriving, every few seconds by
    default.
 
-**Disconnect** ends the connection. If the meter does not show up in a scan,
-check its battery and that its Bluetooth is on, then scan again.
+**If the link drops** (the phone moves out of range, Bluetooth is switched off,
+the meter is turned off), the pane shows **Reconnecting to** *meter*… and the
+plugin reconnects by itself as soon as the meter is back. The station stays on
+the map meanwhile. Tap **Stop** to give up waiting.
+
+**Disconnect** ends the connection, and the plugin does not reconnect. If the
+meter does not show up in a scan, check its battery and that its Bluetooth is
+on, then scan again.
+
+**After changing the meter's battery, recalibrate its compass** (in the
+meter's own menu). Until you do, the meter reports no wind direction: the pane
+shows `--` and the station's symbol on the map is a circle with an X instead of
+a barb.
 
 ## Server and client
 
@@ -72,9 +83,28 @@ The plugin picks its role on its own:
 Every phone running the plugin shows the other stations on its map, with a
 wind barb.
 
-**Hide Server EUD (Client)**: tick **Enabled** beside it to hide, on this
-phone, the marker of the phone that owns the meter, so only the weather station
-marker is shown at that spot.
+**Hide Server EUD (Client)** is on by default: on a phone without a meter, it
+hides the marker of the phone that owns the meter, so only the weather station
+is shown at that spot. Untick **Enabled** beside it to show both.
+
+**Center on Station** moves the map to the station shown in the pane: your own
+meter when connected, otherwise the station you are receiving.
+
+### Station labels
+
+Each station is labelled on the map, by default like
+`Kestrel-WX T:72°F RH:23% W:5mph SW`.
+
+- **Label Format (sent)** (on the phone with the meter): the label this station
+  sends. Build it from `{name}`, `{temp}`, `{rh}`, `{wind}` and `{dir}`; a
+  value with no reading is left out along with its prefix. Phones and WinTAK
+  without the plugin show this label too.
+- **Station Labels (this phone)**: **As sent by each station** (default),
+  **Name only**, **Custom format** (your own format, same tokens, for every
+  station), or **Off** (no text on the map).
+- **Rename on this phone**: in a station's detail view (tap the station, then
+  the detail button). Gives that station a shorter name on this phone only;
+  leave it empty to go back to the sender's name.
 
 ## Sharing readings
 
@@ -96,6 +126,7 @@ phones' maps without an update.
 ## Station settings
 
 - **Callsign**: the name the station is shared under.
+- **Label Format (sent)**: see *Station labels* above.
 - **Poll Interval**: how often the plugin reads the meter.
 
 ## The weather pane

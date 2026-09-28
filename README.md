@@ -1,10 +1,10 @@
 ATAK Plugin — Kestrel Wx
 
-**Download Kestrel Wx 0.2** (pick the one matching your ATAK-CIV version, sideload, then load it in ATAK's Plugins manager):
+**Download Kestrel Wx 0.3** (pick the one matching your ATAK-CIV version, sideload, then load it in ATAK's Plugins manager):
 
-- **ATAK-CIV 5.6:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.6.0-civ-release.apk
-- **ATAK-CIV 5.7:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.7.0-civ-release.apk
-- **ATAK-CIV 5.8:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.2/ATAK-Plugin-KestrelWx-0.2--5.8.0-civ-release.apk
+- **ATAK-CIV 5.6:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.6.0-civ-release.apk
+- **ATAK-CIV 5.7:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.7.0-civ-release.apk
+- **ATAK-CIV 5.8:** https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases/download/v0.3/ATAK-Plugin-KestrelWx-0.3--5.8.0-civ-release.apk
 
 All releases: https://github.com/mighkel/ATAK-Plugin-KestrelWx/releases
 
@@ -34,15 +34,18 @@ Capabilities:
 _________________________________________________________________
 STATUS
 
-Version 0.2: the first release that loads on official ATAK. Version 0.1 was
-signed but never loaded; see CHANGELOG.md.
+Version 0.3: fixes the wind barb disappearing on receiving phones, reconnects
+to the meter after a dropped Bluetooth link, and adds sender-formatted station
+labels with receiver overrides, Center on Station, and new icons. See
+CHANGELOG.md.
 
-Verified on official ATAK with a Kestrel 5500FWL: the 5.6 build on Play Store
-ATAK 5.6.0.12 (Galaxy S8+) connects to the meter and shares readings, and the
-5.8 build on ATAK 5.8.0.4 (Galaxy S24+) receives them.
+0.2 (the first release that loads on official ATAK) was verified with a
+Kestrel 5500FWL on official ATAK 5.6.0.12 (Galaxy S8+, sender), 5.7.0.14 and
+5.8.0.5 (Galaxy S20 Ultra, receiver) and 5.8.0.4 (Galaxy S24+, sender and
+receiver).
 
-Data Sync feed publishing is not implemented yet and shows as "future release"
-in the plugin.
+Data Sync feed publishing is planned for 0.4 and shows as "future release" in
+the plugin.
 
 _________________________________________________________________
 POINT OF CONTACTS

@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.3 — unreleased (submitted to tak.gov)
+
+- **Fixed:** the wind barb could disappear on phones receiving a station,
+  replaced by ATAK's default icon at a frozen position, until ATAK was
+  restarted.
+- **Fixed:** a slow Bluetooth link could produce readings stitched together
+  from two read cycles, and they were published as live.
+- **New:** reconnects to the meter by itself after the link drops (out of
+  range, Bluetooth off, meter off); shows "Reconnecting to …". Disconnect ends
+  it for good.
+- **New:** station labels include wind (`W:5mph SW`). The sender chooses the
+  label format, which WinTAK and phones without the plugin also show; each
+  receiving phone can show it as sent, use its own format, show the name only,
+  or turn labels off, and can rename individual stations.
+- **New:** Center on Station button.
+- **Changed:** Hide Server EUD (Client) is on by default.
+- **Changed:** no wind direction is shown as a circled X instead of a barb
+  pointing north; barbs now sit exactly on the station's position.
+- **Changed:** new icons that show on light backgrounds (Android, market).
+
 ## 0.2 — 2026-09-27
 
 The first version that loads on official ATAK.
