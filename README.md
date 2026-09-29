@@ -39,6 +39,10 @@ to the meter after a dropped Bluetooth link, and adds sender-formatted station
 labels with receiver overrides, Center on Station, and new icons. See
 CHANGELOG.md.
 
+0.3 was verified with the tak.gov-signed builds on official ATAK 5.8.0.4
+(Galaxy S24+, connected to the meter), 5.6.0.12 (Galaxy S8+) and 5.8.0.5
+(Galaxy S20 Ultra).
+
 0.2 (the first release that loads on official ATAK) was verified with a
 Kestrel 5500FWL on official ATAK 5.6.0.12 (Galaxy S8+, sender), 5.7.0.14 and
 5.8.0.5 (Galaxy S20 Ultra, receiver) and 5.8.0.4 (Galaxy S24+, sender and

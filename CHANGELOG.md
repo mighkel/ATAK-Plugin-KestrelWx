@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3 — unreleased (submitted to tak.gov)
+## 0.3 — 2026-09-29
 
 - **Fixed:** the wind barb could disappear on phones receiving a station,
   replaced by ATAK's default icon at a frozen position, until ATAK was
@@ -19,6 +19,10 @@
 - **Changed:** no wind direction is shown as a circled X instead of a barb
   pointing north; barbs now sit exactly on the station's position.
 - **Changed:** new icons that show on light backgrounds (Android, market).
+
+Verified with the tak.gov-signed builds on official ATAK: a Galaxy S24+ on
+ATAK 5.8.0.4 connected to a Kestrel 5500FWL and sent readings; a Galaxy S8+ on
+5.6.0.12 and a Galaxy S20 Ultra on 5.8.0.5 received them and drew the barb.
 
 ## 0.2 — 2026-09-27
 
